@@ -100,9 +100,9 @@ gulp.task('js', function () {
 * 在src目录下创建script文件夹，里面存放所有的js文件
 */
 gulp.task('jshint', function () {
-  gulp.src(JS_APP)
-    .pipe(plugins.jshint())
-    .pipe(plugins.jshint.reporter());
+  // gulp.src(JS_APP)
+  //   .pipe(plugins.jshint())
+  //   .pipe(plugins.jshint.reporter());
 });
 
 // 每次发布的时候，可能需要把之前目录内的内容清除，避免旧的文件对新的容有所影响。 需要在每次发布前删除dist和build目录
