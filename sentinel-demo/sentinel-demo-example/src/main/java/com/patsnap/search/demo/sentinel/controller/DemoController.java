@@ -23,4 +23,9 @@ public class DemoController {
     public String sayHello() {
         return demoService.hello(System.currentTimeMillis());
     }
+
+    @GetMapping("/sayHi")
+    public String sayHi(String name) {
+        return demoService.sayHi(name);
+    }
 }

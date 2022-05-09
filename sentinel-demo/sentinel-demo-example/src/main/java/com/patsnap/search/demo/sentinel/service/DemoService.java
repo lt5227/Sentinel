@@ -9,4 +9,6 @@ package com.patsnap.search.demo.sentinel.service;
  */
 public interface DemoService {
     String hello(long s);
+
+    String sayHi(String name);
 }

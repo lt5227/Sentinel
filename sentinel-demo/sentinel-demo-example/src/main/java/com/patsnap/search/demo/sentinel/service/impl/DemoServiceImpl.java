@@ -26,6 +26,19 @@ public class DemoServiceImpl implements DemoService {
         return String.format("Hello at %d", s);
     }
 
+    @Override
+    @SentinelResource(value = "sayHi", blockHandler = "exceptionHandler", fallback = "sayHiFallback")
+    public String sayHi(String name) {
+        if (name == null || "".equals(name)) {
+            name = "Demo";
+        }
+        return "Hello: " + name;
+    }
+
+    public String sayHiFallback() {
+        return "Fallback";
+    }
+
     /**
      * Fallback 函数，函数签名与原函数一致或加一个 Throwable 类型的参数.
      */
