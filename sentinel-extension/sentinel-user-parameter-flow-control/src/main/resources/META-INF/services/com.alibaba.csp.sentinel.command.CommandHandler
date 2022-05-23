@@ -1,0 +1,2 @@
+com.patsnap.csp.sentinel.command.handler.GetParamFlowRulesCommandHandler
+com.patsnap.csp.sentinel.command.handler.ModifyParamFlowRulesCommandHandler

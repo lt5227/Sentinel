@@ -35,8 +35,7 @@
         </dependency>
         <dependency>
             <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-parameter-flow-control</artifactId>
-            <version>${project.version}</version>
+            <artifactId>sentinel-user-parameter-flow-control</artifactId>
         </dependency>
 
         <dependency>
